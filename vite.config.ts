@@ -4,5 +4,9 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   base: "/engl200a-media/",
+  build: {
+    outDir: "docs",
+    emptyOutDir: true,
+  },
   plugins: [react(), tailwindcss()],
 });
