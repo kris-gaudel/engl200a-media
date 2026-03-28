@@ -59,7 +59,11 @@ export function PoetryChapter({
           >
             {line}
           </blockquote>
-          <p className="mt-6 max-w-xl font-sans text-sm leading-7 text-stone-100/72 sm:text-base">
+          <p
+            className={`mt-6 max-w-xl font-sans text-sm leading-7 text-stone-100/72 sm:text-base ${
+              align === "center" ? "mx-auto" : ""
+            }`}
+          >
             {gloss}
           </p>
           <dl className="mt-8 grid gap-6 border-t border-white/14 pt-6 sm:mt-10 sm:grid-cols-2 sm:gap-8 sm:pt-7">
